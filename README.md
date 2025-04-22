@@ -19,8 +19,10 @@ The purpose of this project proposal is to develop a machine learning model for 
 The potential impact of this project on the issue of Alzheimer's disease is significant:
 
 Early prediction of Alzheimer's disease can lead to timely interventions, potentially slowing down the progression of the disease.
+
 Accurate prediction models can aid in identifying suitable candidates for clinical trials and research studies.
 Providing a tool for early prediction can raise awareness about Alzheimer's disease and encourage individuals to seek early medical evaluation.
+
 Setup Instructions
 (Ignore if you do not want to run the application locally)
 
@@ -28,17 +30,20 @@ Setup Instructions
 
 Before you begin, ensure you have the following:
 
-Python (>= 3.6)
+Python (>= 3.6) 
+
 pip (Python package installer)
 
-**Installation**
+**Installation** 
+
 Clone the repository:
 
 git clone https://github.com/Raghava44u/Alzehimer-Diasease-Prediction-System.git
 
 Create a virtual evironment (recommended):
 
-python3 -m venv venv
+python3 -m venv venv 
+
 source venv/bin/activate
 
 **Install the required packages:** 
@@ -52,10 +57,17 @@ pip install -r requirements.txt
 Go to the web application and navigate to the prediction section from the sidebar.
 Enter the patient's data as asked.
 The prediction system will process the given user data and provide predictions for Alzheimer's likelihood.
+
 Additional Information
+
 Model Details
-Algorithm: Logistic Regression (Accuracy≈75%)
+
+Algorithm: Logistic Regression 
+
+(Accuracy≈75%)
+
 Purpose: Binary classification for Alzheimer's prediction
+
 Input Features: Features relevant to Alzheimer's risk, such as age, mmse score, adoe allele type, adoe4 type and more.
 
 **Dataset** 
