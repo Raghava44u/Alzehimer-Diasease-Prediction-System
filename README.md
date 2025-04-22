@@ -6,11 +6,13 @@ Alzheimer's disease is a complex neurodegenerative disorder that affects million
 
 Alzheimer's disease (AD) is a progressive neurodegenerative disease. Though best known for its role in declining memory function, symptoms also include: difficulty thinking and reasoning, making judgements and decisions, and planning and performing familiar tasks. It may also cause alterations in personality and behavior. The cause of AD is not well understood. There is thought to be a significant hereditary component. For example, a variation of the APOE gene, APOE e4, increases risk of Alzheimer's disease.
 
-**Purpose of the project**
+**Purpose of the project** 
+
 
 The purpose of this project proposal is to develop a machine learning model for the early prediction of Alzheimer's disease. Alzheimer's disease is a devastating neuro-degenerative disorder that affects millions of individuals worldwide. Early detection is crucial for better patient care and the development of potential interventions. This project aims to leverage machine learning techniques to create a predictive model that can identify individuals at risk of Alzheimer's disease based on relevant data.
 
-**Potential Impact**
+**Potential Impact** 
+
 The potential impact of this project on the issue of Alzheimer's disease is significant:
 
 Early prediction of Alzheimer's disease can lead to timely interventions, potentially slowing down the progression of the disease.
@@ -19,26 +21,31 @@ Providing a tool for early prediction can raise awareness about Alzheimer's dise
 Setup Instructions
 (Ignore if you do not want to run the application locally)
 
-**Prerequisites**
+**Prerequisites** 
+
 Before you begin, ensure you have the following:
 
 Python (>= 3.6)
 pip (Python package installer)
-Installation
+
+**Installation**
 Clone the repository:
 
 git clone https://github.com/Raghava44u/Alzehimer-Diasease-Prediction-System.git
-cd Alzheimers_Prediction_System
+
 Create a virtual evironment (recommended):
 
 python3 -m venv venv
 source venv/bin/activate
 
-**Install the required packages:**
+**Install the required packages:** 
+
 pip install -r requirements.txt
 
-**Usage Guide**
-Data Input
+**Usage Guide** 
+
+**Data Input** 
+
 Go to the web application and navigate to the prediction section from the sidebar.
 Enter the patient's data as asked.
 The prediction system will process the given user data and provide predictions for Alzheimer's likelihood.
@@ -47,10 +54,14 @@ Model Details
 Algorithm: Logistic Regression (Accuracy≈75%)
 Purpose: Binary classification for Alzheimer's prediction
 Input Features: Features relevant to Alzheimer's risk, such as age, mmse score, adoe allele type, adoe4 type and more.
-**Dataset**
+
+**Dataset** 
+
 The model was trained on a dataset collected from Alzheimer’s Disease Neuroimaging Initiative (ADNI) . This dataset is a comprehensive collection of clinical, imaging, and genetic data from individuals with Alzheimer's disease.
 link : https://adni.loni.usc.edu/
 
-**Deployment**
+**Deployment** 
+
+
 The final Alzheimer's predcition model is deployed on the following platforms:
 Streamlit
