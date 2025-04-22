@@ -41,6 +41,6 @@ CONDITION_DESCRIPTION = {
 # TEAM MEMBERS PAGE
 TEAM_MEMBERS = [
     {"name": "Veera Raghavulu", "role": "Backend Developer", "links":["https://www.linkedin.com/in/veera-raghavulu-dasari-7b584428a/", "https://github.com/Raghava44u?tab=repositories"]},
-    {"name":"Amaritanshi Gupta","role":"frontend developer","links":["#linkedin","#github"]}
+    {"name":"Amaritanshi Gupta","role":"frontend developer","links":["www.linkedin.com/in/amaritanshi-gupta-a8342827a","https://github.com/AMRIT230904"]}
     
 ]

@@ -83,6 +83,7 @@ def prediction_page():
 
         st.write("")
         st.write("")
-        st.write("### Predicted Clinical Condition:", unsafe_allow_html=True)
-        st.write(f"## <b>{ABBREVIATION[predicted_condition[0]]}</b> ({predicted_condition[0]})", unsafe_allow_html=True)
-        st.write(f"{CONDITION_DESCRIPTION[predicted_condition[0]]}", unsafe_allow_html=True)
+        st.markdown('<h3 style="color: orange;">Predicted Clinical Condition:</h3>', unsafe_allow_html=True)
+        st.markdown(f"<h2 style='color: orange;'><b>{ABBREVIATION[predicted_condition[0]]}</b> ({predicted_condition[0]})</h2>", unsafe_allow_html=True)
+        st.markdown(f"<p>{CONDITION_DESCRIPTION[predicted_condition[0]]}</p>", unsafe_allow_html=True)
+
