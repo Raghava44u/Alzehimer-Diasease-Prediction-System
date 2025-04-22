@@ -1,3 +1,6 @@
+**Hey Developer, Welcome !** 
+
+
 **Introduction**
 
 Alzheimer's disease is a complex neurodegenerative disorder that affects millions of people worldwide. Early detection and prediction of Alzheimer's can lead to better management and treatment outcomes. This prediction system utilizes a machine learning model trained on a dataset of relevant features to provide predictions about the likelihood of Alzheimer's disease.
@@ -64,4 +67,4 @@ link : https://adni.loni.usc.edu/
 
 
 The final Alzheimer's predcition model is deployed on the following platforms:
-Streamlit
+**Streamlit** 
