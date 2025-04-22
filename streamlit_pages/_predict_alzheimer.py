@@ -6,17 +6,17 @@ import streamlit as st
 
 def prediction_page():
     def convert_to_one_hot(selected_category, all_categories):
-            one_hot = [True if category == selected_category else False for category in all_categories]
-            for value in one_hot:
-                user_input.append(value)
+        one_hot = [True if category == selected_category else False for category in all_categories]
+        for value in one_hot:
+            user_input.append(value)
 
     def predict_alzheimer(input_data):
         loaded_model = joblib.load('model/alzheimer_model.pkl')
         predictions = loaded_model.predict(input_data)
-
         return predictions
 
-    st.title("Patient Information")
+    st.markdown('<h1 style="color: orange;">Patient Information</h1>', unsafe_allow_html=True)
+
 
     age = st.number_input("Age", min_value=0, max_value=122, step=1, value=65)
     gender = st.selectbox("Gender", ("Male", "Female"))
@@ -24,18 +24,21 @@ def prediction_page():
 
     st.write("<br>", unsafe_allow_html=True)
 
-    st.header("Demographics")
+    # Orange heading for Demographics
+    st.markdown('<h2 style="color: orange;">Demographics</h2>', unsafe_allow_html=True)
     ethnicity = st.radio("Ethnicity", ("Hisp/Latino", "Not Hisp/Latino", "Unknown"))
     race_cat = st.radio("Race Category", ("White", "Black", "Asian"))
 
     st.write("<br>", unsafe_allow_html=True)
 
-    st.header("Genetic Information")
+    # Orange heading for Genetic Info
+    st.markdown('<h2 style="color: orange;">Genetic Information</h2>', unsafe_allow_html=True)
     apoe_allele_type = st.selectbox("APOE Allele Type", ["APOE4_0", "APOE4_1", "APOE4_2"])
     apoe_genotype = st.selectbox("APOE4 Genotype", ("2,2", "2,3", "2,4", "3,3", "3,4", "4,4"))
     imputed_genotype = st.radio("Imputed Genotype", ("True", "False"))
 
-    st.header("Cognitive Assessment")
+    # Orange heading for Cognitive Assessment
+    st.markdown('<h2 style="color: orange;">Cognitive Assessment</h2>', unsafe_allow_html=True)
     mmse = st.number_input("MMSE Score", min_value=0, max_value=30, step=1)
 
     st.write("<br>", unsafe_allow_html=True)

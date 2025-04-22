@@ -3,7 +3,7 @@ import streamlit as st
 from config import *
 from streamlit_pages._home_page import home_page
 from streamlit_pages._predict_alzheimer import prediction_page
-
+from streamlit_pages._team_members import team_members  
 # SETTING PAGE CONFIG
 st.set_page_config(
     page_title="Alzheimer's Prediction Systems",
@@ -38,20 +38,22 @@ set_page_background(BACKGROUND)
 # STREAMLIT APP
 st.sidebar.image(SIDE_BANNER)
 
-st.sidebar.title("Alzheimer's Prediction System")
+st.sidebar.markdown('<h1 style="color: orange;">Alzheimer\'s Prediction System</h1>', unsafe_allow_html=True)
+
 app_mode = st.sidebar.selectbox(
     "Please navigate through the different sections of our website from here",
     ["Home", "Predict Alzheimer's", "Team Members"],
 )
 
 
-st.sidebar.write("""
-# Disclaimer
-The predictions provided by this system are for informational purposes only. Consult a healthcare professional for accurate diagnosis and advice.
+st.sidebar.markdown("""
+<h1 style="color: orange;">Disclaimer</h1>
+<p>The predictions provided by this system are for informational purposes only. Consult a healthcare professional for accurate diagnosis and advice.</p>
 
-# Contact
-For inquiries, you can mail us [here](mailto:arpitsengar99@gmail.com).
-""")
+<h1 style="color: orange;">Contact</h1>
+<p>For inquiries, you can mail us <a href="mailto:raghavadasari44@gmail.com">here</a>.</p>
+""", unsafe_allow_html=True)
+
 
 
 def main():
@@ -59,6 +61,8 @@ def main():
         home_page()
     if app_mode == "Predict Alzheimer's":
         prediction_page()
+    if app_mode=="Team Members":
+        team_members()
 
 
 if __name__ == "__main__":
